@@ -1,0 +1,19 @@
+{
+    "ajax": {
+        "prefix": "ajax",
+        "body": [
+            "$.ajax({",
+            "    url: '$1',",
+            "    method: '${2:POST}',",
+            "    datatype: 'json',",
+            "    success: data => {",
+            "        $3;",
+            "    },",
+            "    error: err => {",
+            "        $4;",
+            "    }",
+            "})"
+        ],
+        "description": "ajax模块"
+    }
+}
