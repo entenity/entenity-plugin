@@ -3,14 +3,14 @@
 </p>
 
 <p align="center">
-  <a href="https://marketplace.visualstudio.com/items?itemName=entenity.HySippnet">
+  <a href="https://marketplace.visualstudio.com/items?itemName=entenity.hy-sippnets">
     <img src="https://vsmarketplacebadge.apphb.com/version-short/entenity.HySippnet.svg">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=entenity.HySippnet">
+  <a href="https://marketplace.visualstudio.com/items?itemName=entenity.hy-sippnets">
     <img src="https://vsmarketplacebadge.apphb.com/installs-short/entenity.HySippnet.svg">
   </a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=entenity.HySippnet">
-    <img src="https://vsmarketplacebadge.apphb.com/rating-star/entenity.HySippnet.svg">
+  <a href="https://marketplace.visualstudio.com/items?itemName=entenity.hy-sippnets">
+    <img src="https://vsmarketplacebadge.apphb.com/rating-star/entenity.hy-sippnets.svg">
   </a>
   <br>
 </p>
