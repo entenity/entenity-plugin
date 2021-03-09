@@ -4,10 +4,10 @@
 
 <p align="center">
   <a href="https://marketplace.visualstudio.com/items?itemName=entenity.hy-sippnets">
-    <img src="https://vsmarketplacebadge.apphb.com/version-short/entenity.HySippnet.svg">
+    <img src="https://vsmarketplacebadge.apphb.com/version-short/entenity.hy-sippnets.svg">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=entenity.hy-sippnets">
-    <img src="https://vsmarketplacebadge.apphb.com/installs-short/entenity.HySippnet.svg">
+    <img src="https://vsmarketplacebadge.apphb.com/installs-short/entenity.hy-sippnets.svg">
   </a>
   <a href="https://marketplace.visualstudio.com/items?itemName=entenity.hy-sippnets">
     <img src="https://vsmarketplacebadge.apphb.com/rating-star/entenity.hy-sippnets.svg">
