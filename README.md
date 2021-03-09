@@ -15,9 +15,9 @@
   <br>
 </p>
 
-### 关于瀚云代码片段插件
+### 自动填充代码片段插件
 
-为了更方便快捷满足开发，适应当前快速开发模式，瀚云代码片段自动补充插件应运而生，该插件目前分**JavaScript TypeScript Vue-template**三种代码片段，[sippnets 语法参考](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
+为了更方便快捷满足开发，适应当前快速开发模式，代码片段自动补充插件应运而生，该插件目前分**JavaScript TypeScript Vue-template**三种代码片段，[sippnets 语法参考](https://code.visualstudio.com/docs/editor/userdefinedsnippets)
 
 ### JavaScript
 
