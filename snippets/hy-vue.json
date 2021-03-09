@@ -1,9 +1,292 @@
 {
     "hy-button": {
-        "prefix": "hy-button",
+        "prefix": ["hy-button", "hb"],
         "body": [
             "<hy-button type='primary'>主要按钮</hy-button>"
         ],
-        "description": "hy-button基础组件"
+        "description": "hy-button 基础组件"
+    },
+    "hy-cascader": {
+        "prefix": ["hy-cascader", "hca"],
+        "body": [
+            "<hy-cascader v-model='value1' :options = 'options1' :props='{ expandTrigger: 'hover' }'></hy-cascader>"
+        ],
+        "description": "hy-cascader 基础组件"
+    },
+    "hy-checkbox": {
+        "prefix": ["hy-checkbox", "hc"],
+        "body": [
+            "<hy-checkbox v-model='value' label='备选项'></hy-checkbox>"
+        ],
+        "description": "hy-checkbox 基础组件"
+    },
+    "hy-date-picker": {
+        "prefix": ["hy-date-picker", "hdp"],
+        "body": [
+            "<hy-date-picker ",
+            "   v-model='value6'",
+            "    type='daterange'",
+            "    range-separator='至'",
+            "    start-placeholder='开始日期'",
+            "    end-placeholder='结束日期'>",
+            "</hy-date-picker>"
+        ],
+        "description": "hy-date-picker 基础组件"
+    },
+    "hy-form": {
+        "prefix": ["hy-form", "hf"],
+        "body": [
+            "<hy-form",
+            "    ref='form'",
+            "    :model='form'",
+            "    label-width='80px'",
+            "    :inline='true'",
+            "    use-type='dialog'",
+            ">",
+            "    <hy-form-item label=''>",
+            "        <hy-select v-model='form.name' filterable placeholder='请输入关键字'></hy-select>",
+            "    </hy-form-item>",
+            "    <hy-form-item>",
+            "        <hy-select v-model='form.type' filterable></hy-select>",
+            "    </hy-form-item>",
+            "    <hy-form-item>",
+            "        <hy-select v-model='form.time'></hy-select>",
+            "    </hy-form-item>",
+            "    <hy-form-item>",
+            "        <hy-button size='mini' type='primary'>搜索</hy-button>",
+            "    </hy-form-item>",
+            "    <hy-form-item>",
+            "        <hy-button size='mini'>重置</hy-button>",
+            "    </hy-form-item>",
+            "</hy-form>"
+        ],
+        "description": "hy-form 基础组件"
+    },
+    "hy-input": {
+        "prefix": ["hy-input", "hi"],
+        "body": [
+            "<hy-input v-model='small' size='small' placeholder='placeholder' clearable @clear='handleTest'></hy-input>"
+        ],
+        "description": "hy-input 基础组件"
+    },
+    "hy-input-number": {
+        "prefix": ["hy-input-number", "hin"],
+        "body": [
+            "<hy-input-number ",
+            "    v-model='num' ",
+            "    @change='handleChange' ",
+            "    :min='1' ",
+            "    :max='10'" ,
+            "    label='描述文字'>",
+            "</hy-input-number>"
+        ],
+        "description": "hy-input-number 基础组件"
+    },
+    "hy-layout": {
+        "prefix": ["hy-layout", "hl"],
+        "body": [
+            "<hy-layout",
+            "    :personal-data='dropList'",
+            "    :menu-data='menuData'",
+            "    :personal-event='personalClick'",
+            "    active-border-color='#5584FF'",
+            "    active-hover-color='#dddddd'",
+            "    bread-hover-color='red'",
+            ">",
+            "    <i slot='global-nav' class='iconfont iconnav2'></i>",
+            "    <img slot='global-logo' :src='require('../assets/images/logo.png')'/>",
+            "    <span slot='global-title' style='color: #fff;'>瀚云通用布局</span>",
+            "    <div slot='global-custom' style='color: #fff; height: 100%;margin-right: 20px;line-height: 60px;'>",
+            "    这是一个自定义插槽",
+            "    <div>",
+            "</hy-layout>"
+        ],
+        "description": "hy-layout"
+    },
+    "hy-login": {
+        "prefix": ["hy-login", "hlo"],
+        "body": [
+            "<hy-login :comfirm-event='handleLogin'>",
+            "    <h2 slot='header'>欢迎登录</h2>",
+            "</hy-login>"
+        ],
+        "description": "hy-login"
+    },
+    "hy-modal": {
+        "prefix": ["hy-modal", "hm"],
+        "body": [
+            "<hy-modal ",
+            "    :visible.sync='visible1' ",
+            "    @sure='sureAction' ",
+            "    @cancel = 'cancelAction' ",
+            "    title = 'modal1'",
+            "> ",
+            "    我是modal1 ",
+            "</hy-modal>"
+        ],
+        "description": "hy-modal"
+    },
+    "hy-radio": {
+        "prefix": ["hy-radio", "hr"],
+        "body": [
+            "<hy-radio",
+            "    v-model='value'",
+            "    type='normal'",
+            "    :data='data'",
+            "    @change='handleChange'",
+            "></hy-radio>"
+        ],
+        "description": "hy-radio 基础组件"
+    },
+    "hy-rate": {
+        "prefix": ["hy-rate", "hra"],
+        "body": [
+            "<hy-rate",
+            "    v-model='value'",
+            "    disabled",
+            "    show-score",
+            "    text-color='#ff9900'",
+            "    score-template='{value}'",
+            "></hy-rate>"
+        ],
+        "description": "hy-rate 基础组件"
+    },
+    "hy-select": {
+        "prefix": ["hy-select", "hs"],
+        "body": [
+            "<hy-select :options='options' v-model='value'></hy-select>"
+        ],
+        "description": "hy-select 基础组件"
+    },
+    "hy-slider": {
+        "prefix": ["hy-slider", "hsl"],
+        "body": [
+            "<hy-slider v-model='value' :format-tooltip='formatTooltip'></hy-slider>"
+        ],
+        "description": "hy-slider 基础组件"
+    },
+    "hy-switch": {
+        "prefix": ["hy-switch", "hsw"],
+        "body": [
+            "<hy-switch v-model='value' type='desc'></hy-switch>"
+        ],
+        "description": "hy-switch 基础组件"
+    },
+    "hy-table": {
+        "prefix": ["hy-table", "ht"],
+        "body": [
+            "<hy-table :data='tableData' height='250'>",
+            "    <hy-table-column prop='date' label='日期' width='150'></hy-table-column>",
+            "    <hy-table-column prop='name' label='姓名' width='120'></hy-table-column>",
+            "    <hy-table-column prop='province' label='省份' width='120'></hy-table-column>",
+            "    <hy-table-column prop='city' label='市区' width='120'></hy-table-column>",
+            "    <hy-table-column prop='address' label='地址'></hy-table-column>",
+            "    <hy-table-column prop='zip' label='邮编' width='120'></hy-table-column>",
+            "</hy-table>"
+        ],
+        "description": "hy-table 基础组件"
+    },
+    "hy-time-picker": {
+        "prefix": ["hy-time-picker", "htp"],
+        "body": [
+            "<hy-time-picker",
+            "    v-model='startTime'",
+            "    :picker-options='pickerOptions'",
+            "    placeholder='起始时间'",
+            "></hy-time-picker>"
+        ],
+        "description": "hy-time-picker 基础组件"
+    },
+    "hy-upload": {
+        "prefix": ["hy-upload", "hu"],
+        "body": [
+            "<hy-upload",
+            "    action='/api/uploads/images?imageType=FARM_WORK'",
+            "    multiple",
+            "    :limit-num='3'",
+            "    :file-list='fileList'",
+            "    use-type='file'",
+            "    :tip-text='tipText'",
+            "    :suffix-name='suffixName'",
+            ">",
+            "</hy-upload>"
+        ],
+        "description": "hy-upload 基础组件"
+    },
+    "hy-upload-attachment": {
+        "prefix": ["hy-upload-attachment", "huat"],
+        "body": [
+            "<hy-upload",
+            "    action='/api/uploads/images?imageType=FARM_WORK'",
+            "    drag",
+            "    :limit-num='1'",
+            "    :file-list='fileList'",
+            "    use-type='attachment'",
+            "    :tip-text='tipText1'",
+            "    :suffix-name='suffixName'",
+            ">",
+            "</hy-upload>"
+        ],
+        "description": "hy-upload 基础组件"
+    },
+    "hy-upload-avatar": {
+        "prefix": ["hy-upload-avatar", "huav"],
+        "body": [
+            "<hy-upload",
+            "    action='/api/uploads/images?imageType=FARM_WORK'",
+            "    use-type='avatar'",
+            "    :tip-text='tipText'",
+            "    :suffix-name='suffixName'",
+            "    :on-success='handleSuccess'",
+            "    :image-url='imageUrl'",
+            "    >",
+            "</hy-upload>"
+        ],
+        "description": "hy-upload 基础组件"
+    },
+    "hy-upload-card": {
+        "prefix": ["hy-upload-card", "huc"],
+        "body": [
+            "<hy-upload",
+            "    action='/api/uploads/images?imageType=FARM_WORK'",
+            "    use-type='card'",
+            "    multiple",
+            "    :limit-num='3'",
+            "    :tip-text='tipText'",
+            "    :suffix-name='suffixName'",
+            "    :on-preview='handlePictureCardPreview'",
+            "    :on-remove='handlePictureCardRemove'",
+            "    :on-close='handlePictureCardClose'",
+            "    :visible='dialogVisible'",
+            "    :image-url='dialogImageUrl'",
+            "    :on-error='handlePictureError'",
+            ">",
+            "</hy-upload>"
+        ],
+        "description": "hy-upload 基础组件"
+    },
+    "hy-upload-cropper": {
+        "prefix": ["hy-upload-cropper", "hucr"],
+        "body": [
+            "<div class='cropper'>",
+            "    <img v-if='cropperImage' :src='cropperImage' width='150px' height='150px'/>",
+            "    <hy-button size='mini' icon='el-icon-download' plain @click='handleVisible'>更换头像</hy-button>",
+            "</div>",
+            "<hy-upload",
+            "    action='/api/uploads/images?imageType=FARM_WORK'",
+            "    use-type='cropper'",
+            "    :tip-text='tipText4'",
+            "    :suffix-name='suffixName'",
+            "    limit-size='2M'",
+            "    :visible='cropperVisible'",
+            "    :on-close='handleClose'",
+            "    :on-success='handleCropperSuccess'",
+            "    :on-error='handleCropperError'",
+            ">",
+            "    <span style='font-weight: 600'>更换头像</span>",
+            "</hy-upload>"
+        ],
+        "description": "hy-upload 基础组件"
     }
+
 }
