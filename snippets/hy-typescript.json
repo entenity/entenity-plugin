@@ -1,0 +1,11 @@
+{
+    "class": {
+        "prefix": "class",
+        "body": [
+            "import { Vue, Component, Prop } from 'vue-property-decorator'",
+            "@Component({'$1'})",
+            "export default class Class extends Vue {'$2'}"
+        ],
+        "description": "声明class模块"
+    }
+}

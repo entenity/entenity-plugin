@@ -1,0 +1,9 @@
+{
+    "hy-button": {
+        "prefix": "hy-button",
+        "body": [
+            "<hy-button type='primary'>主要按钮</hy-button>"
+        ],
+        "description": "hy-button基础组件"
+    }
+}
